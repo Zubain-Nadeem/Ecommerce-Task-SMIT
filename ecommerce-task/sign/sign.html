@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+    <link rel="stylesheet" href="sign.css">
+</head>
+
+<body>
+    <section class="main-container">
+        <section class="sign-container">
+            <h1>Signup</h1>
+
+            <div class="form">
+
+                <input type="text" placeholder="First Name " class="firstName">
+                <input type="text" placeholder="Last Name" class="lastName">
+
+                <input type="email" name="email" class="email" placeholder="Enter Email" required>
+                <input type="password" name="password" class="password" placeholder="Password">
+                
+                <button class="sign-btn" onclick="signUp()">SignUp</button>
+            </div>
+
+            <div class="login-section">
+                <p>Already have account ? </p>
+                <span onclick="login()">Login </span>
+
+            </div>
+
+        </section>
+    </section>
+
+    <script src="sign.js"></script>
+</body>
+
+</html>

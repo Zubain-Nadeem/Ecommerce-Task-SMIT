@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Login Page Css */
+
+.main-container{
+    background-color: #adb5bd;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container{   
+    padding: 15px;
+    width: 30%;
+    height: 350px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 5px 5px 2px #6c757d;
+}
+
+.login-container > h1 {
+    padding: 10px;
+    text-align: center;
+    font-size: 28px;
+    color: #023e8a;
+}
+
+.form{
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+input {
+    width: 80%;
+    height: 45px; 
+    font-size: 16px; 
+    background-color: #adb5bd;
+    border: transparent;
+    border-radius: 20px;
+    padding-left: 7px;
+}
+
+input::placeholder{
+    font-size: 15px;
+    padding-left: 7px;
+    color: #000;
+}
+
+.login-btn{
+    border: 1px solid #fff;
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+    background-color: #023e8a;
+    color: #fff;
+    font-size: 20px;
+}
+
+.signup-section{
+    height: 40px;
+    padding: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+span{
+    padding-left: 3px;
+    text-decoration: underline;
+    color: #023e8a;
+    cursor: pointer;
+}
+/* Login Page Css */
+
+@media (max-width:600px){
+    
+.login-container{   
+    padding: 15px;
+    width: 50%;
+    height: 350px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 5px 5px 2px #6c757d;
+}
+
+.login-container > h1 {
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: #023e8a;
+}
+
+.form{
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+input {
+    width: 70%;
+    height: 35px; 
+    font-size: 14px; 
+    background-color: #adb5bd;
+    border: transparent;
+    border-radius: 20px;
+    padding-left: 7px;
+}
+
+input::placeholder{
+    font-size: 13px;
+    padding-left: 7px;
+    color: #000;
+}
+
+.login-btn{
+    border: 1px solid #fff;
+    width: 30%;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #023e8a;
+    color: #fff;
+    font-size: 15px;
+}
+
+.signup-section{
+    height: 40px;
+    padding: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 12px;
+   align-items: center;
+}
+p{
+    font-size: 14px;
+}
+span{
+    padding-left: 3px;
+    font-size: 13px;
+    text-decoration: underline;
+    color: #023e8a;
+}
+}
