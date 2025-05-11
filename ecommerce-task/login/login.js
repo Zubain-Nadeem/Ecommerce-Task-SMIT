@@ -1,17 +1,3 @@
-// let user = [];
-// let logEmail = document.querySelectorAll('.email')[0];
-// let logPass = document.querySelectorAll('.password')[0];
-
-// function login() {
-//     let email = logEmail.value;
-//     let password = logPass.value;
-
-//     user.push({email : email , password : password})
-//     location = "../products/product.html"
-//     logEmail.value = "";
-//     logPass.value = "";
-
-// }
 
 function signUp() {
     location = '../sign/sign.html'

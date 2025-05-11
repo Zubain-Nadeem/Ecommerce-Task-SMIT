@@ -29,6 +29,32 @@
 
 /* Hero Section */
 
+/* cart  */
+
+.cart-container {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: #fff;
+    padding: 8px 12px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    color: #570000;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.cart-icon {
+    font-size: 22px;
+}
+
+/* cart  */
+
 
 img{
     height: 350px;
@@ -52,6 +78,21 @@ h2{
 
 p{
     padding: 5px;
+}
+.last{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5px;
+    align-items: center;
+}
+button{
+    padding: 5px 15px;
+    margin-left: 2px;
+    background-color: #570000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 /*  */

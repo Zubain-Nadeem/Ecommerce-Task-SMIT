@@ -3,8 +3,8 @@ function login() {
     location = '../login/login.html'
 }
 
-let emailInput = document.querySelector('.email');
-let passwordInput = document.querySelector('.password');
+let emailInput = document.querySelectorAll('.email')[0];
+let passwordInput = document.querySelectorAll('.password')[0];
 
 function signUp() {
     let email = emailInput.value;
@@ -22,8 +22,9 @@ function signUp() {
 
     if (alreadyExists) {
         alert("This email and password already exist. Please login.");
-        location= "../login/login.html"; // or wherever your login page is
-    } else { 
+        location= "../login/login.html";
+    } 
+    else { 
         users.push({ email, password });
         localStorage.setItem("users", JSON.stringify(users));
         alert("Account created! Redirecting to products...");
