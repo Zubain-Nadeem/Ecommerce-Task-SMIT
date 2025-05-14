@@ -12,7 +12,7 @@ Cart.prototype.init = function() {
 };
 
 Cart.prototype.setupEventListeners = function() {
-    var self = this;
+    let self = this;
     document.getElementById('checkoutBtn').addEventListener('click', function() {
         if (self.items.length === 0) {
             alert('Your cart is empty!');
@@ -24,7 +24,7 @@ Cart.prototype.setupEventListeners = function() {
 };
 
 Cart.prototype.addItem = function(product) {
-    var existingItem = this.items.find(function(item) {
+    let existingItem = this.items.find(function(item) {
         return item.id === product.id;
     });
     
@@ -58,7 +58,7 @@ Cart.prototype.removeItem = function(productId) {
 };
 
 Cart.prototype.updateQuantity = function(productId, newQuantity) {
-    var item = this.items.find(function(item) {
+    let item = this.items.find(function(item) {
         return item.id === productId;
     });
     if (item) {
@@ -89,9 +89,9 @@ Cart.prototype.calculateTotal = function() {
 };
 
 Cart.prototype.updateSummary = function() {
-    var subtotal = this.calculateSubtotal();
-    var tax = this.calculateTax();
-    var total = this.calculateTotal();
+    let subtotal = this.calculateSubtotal();
+    let tax = this.calculateTax();
+    let total = this.calculateTotal();
 
     document.getElementById('subtotal').textContent = '$' + subtotal.toLocaleString();
     document.getElementById('tax').textContent = '$' + tax.toLocaleString();
@@ -99,18 +99,18 @@ Cart.prototype.updateSummary = function() {
 };
 
 Cart.prototype.updateCartCount = function() {
-    var count = this.items.reduce(function(total, item) {
+    let count = this.items.reduce(function(total, item) {
         return total + item.quantity;
     }, 0);
     // Update cart count in product page if it exists
-    var cartCountEl = document.querySelector('.cart-count');
+    let cartCountEl = document.querySelector('.cart-count');
     if (cartCountEl) {
         cartCountEl.textContent = count;
     }
 };
 
 Cart.prototype.renderCart = function() {
-    var cartItemsContainer = document.getElementById('cartItems');
+    let cartItemsContainer = document.getElementById('cartItems');
     
     if (this.items.length === 0) {
         cartItemsContainer.innerHTML = 
@@ -121,7 +121,7 @@ Cart.prototype.renderCart = function() {
         return;
     }
 
-    var itemsHTML = this.items.map(function(item) {
+    let itemsHTML = this.items.map(function(item) {
         return (
             '<div class="cart-item">' +
                 '<img src="' + item.image + '" alt="' + item.name + '">' +
@@ -145,9 +145,9 @@ Cart.prototype.renderCart = function() {
 };
 
 // Initialize cart
-var cart = new Cart();
+let cart = new Cart();
 
 // Function to add item to cart (can be called from product page)
 function addToCart(product) {
-    cart.addItem(product);
+    let.addItem(product);
 } 
